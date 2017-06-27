@@ -1,5 +1,313 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section#fh5co-home(data-section='home', style='background-image: url(images/index-plant.jpg);', data-stellar-background-ratio='0.5')
+    .gradient
+    .container
+      .text-wrap
+        .text-inner
+          .row
+            .col-md-5.col-md-offset-6
+              h1.to-animate 
+                a(href="#") Nanny Pot.
+              h2.to-animate
+                | Mengasuh dan Merawat Bumi. 
+    .slant
+  section#fh5co-intro
+    .container
+      .row.row-bottom-padded-lg
+        .fh5co-block.to-animate(style='background-image: url(images/grad1.jpg);')
+          .overlay-darker
+          .overlay
+          .fh5co-text
+            i.fh5co-intro-icon.icon-layers
+            h2 Problem
+            p
+              | Urban people lack of space to plant trees while at the same time have so much waste unutillized.
+        .fh5co-block.to-animate(style='background-image: url(images/grad2.jpg);')
+          .overlay-darker
+          .overlay
+          .fh5co-text
+            i.fh5co-intro-icon.icon-leaf
+            h2 Hydroponic
+            p
+              | Hydroponic helps them to plant without land and dealing with waste management problem.
+        .fh5co-block.to-animate(style='background-image: url(images/grad3.jpg);')
+          .overlay-darker
+          .overlay
+          .fh5co-text
+            i.fh5co-intro-icon.icon-heart
+            h2 Goal
+            p
+              | Create more enivronmentally friendly living for urban people by growing plants in their home
+      //- .row.watch-video.text-center.to-animate
+      //-   span Watch the video
+      //-   a.popup-vimeo.btn-video(href='https://vimeo.com/channels/staffpicks/93951774')
+      //-     i.icon-play2
+  section#fh5co-work(data-section='work')
+    .container
+      .row
+        .col-md-12.section-heading.text-center
+          h2.to-animate How to plant hydroponic
+          .row
+            .col-md-8.col-md-offset-2.subtext.to-animate
+              p 
+                i "Use plants to bring life."
+                | -- Douglas Wilson
+      .row.row-bottom-padded-sm
+        .col-md-4.col-sm-6.col-xxs-12.text-center
+          a.fh5co-project-item.image-popup.to-animate(href='images/step1.png')
+            img.img-responsive(src='images/step1.png', alt='Image')
+            .fh5co-text
+              h2 Step 1
+              span Prepare tools
+        .col-md-4.col-sm-6.col-xxs-12.text-center
+          a.fh5co-project-item.image-popup.to-animate(href='images/step2.png')
+            img.img-responsive(src='images/step2.png', alt='Image')
+            .fh5co-text
+              h2 Step 2
+              span Cut bottle
+        .clearfix.visible-sm-block
+        .col-md-4.col-sm-6.col-xxs-12.text-center
+          a.fh5co-project-item.image-popup.to-animate(href='images/step3.png')
+            img.img-responsive(src='images/step3.png', alt='Image')
+            .fh5co-text
+              h2 Step 3
+              span Cut out side of the bottle
+        .col-md-4.col-sm-6.col-xxs-12.text-center
+          a.fh5co-project-item.image-popup.to-animate(href='images/step4.png')
+            img.img-responsive(src='images/step4.png', alt='Image')
+            .fh5co-text
+              h2 Step 4
+              span Cover wit plastic
+        .clearfix.visible-sm-block
+        .col-md-4.col-sm-6.col-xxs-12.text-center
+          a.fh5co-project-item.image-popup.to-animate(href='images/step5.png')
+            img.img-responsive(src='images/step5.png', alt='Image')
+            .fh5co-text
+              h2 Step 5
+              span Put in the flanel fuse
+        .col-md-4.col-sm-6.col-xxs-12.text-center
+          a.fh5co-project-item.image-popup.to-animate(href='images/step6.png')
+            img.img-responsive(src='images/step6.png', alt='Image')
+            .fh5co-text
+              h2 Step 6
+              span Prepare the seed
+        .clearfix.visible-sm-block
+  section#fh5co-testimonials(data-section='testimonials')
+    .container
+      .row
+        .col-md-12.section-heading.text-center
+          h2.to-animate Testimonials
+          //- .row
+          //-   .col-md-8.col-md-offset-2.subtext.to-animate
+          //-     h3
+          //-       | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+      .row
+        .col-md-4
+          .box-testimony
+            blockquote.to-animate-2
+              p
+                | “Bagus nih barangnya dan sangat enak sekali ketika dimakan hhoohohohoho.”
+            .author.to-animate
+              figure
+                img(src='images/person1.jpg', alt='Person')
+              p
+                a(href='https://www.linkedin.com/in/frand-antoni-6936229a/', target='_blank') Frand Antoni
+                span.subtext President of Hydroponic
+        .col-md-4
+          .box-testimony
+            blockquote.to-animate-2
+              p
+                | “I love this thing from every perspective including politics.”
+            .author.to-animate
+              figure
+                img(src='images/person2.jpg', alt='Person')
+              p
+                a(href='https://www.linkedin.com/in/cania-citta-irlanie-68ab46ab/', target='_blank') Cania Citta Irlaine
+                span.subtext Department of Justice
+        .col-md-4
+          .box-testimony
+            blockquote.to-animate-2
+              p
+                | “Enak nih buat yang jomblo jomblo perlu isi waktu seperti saya.”
+            .author.to-animate
+              figure
+                img(src='images/person3.jpg', alt='Person')
+              p
+                a(href='https://www.linkedin.com/in/muhammadnugrahasaputra/', target='_blank') Muhammad Nugraha
+                span.subtext Jomblo
+  section#fh5co-services(data-section='services')
+    .container
+      .row
+        .col-md-12.section-heading.text-left
+          h2.left-border.to-animate Services
+          .row
+            .col-md-8.subtext.to-animate
+              h3
+                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      .row
+        .col-md-6.col-sm-6.fh5co-service.to-animate
+          i.icon.to-animate-2.icon-tree
+          h3 Hydroponic Plantation
+          p
+            | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean
+        .col-md-6.col-sm-6.fh5co-service.to-animate
+          i.icon.to-animate-2.icon-basket-loaded
+          h3 Kits for hydroponic
+          p
+            | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean
+        .clearfix.visible-sm-block
+  //- section#fh5co-about(data-section='about')
+  //-   .container
+  //-     .row
+  //-       .col-md-12.section-heading.text-center
+  //-         h2.to-animate About
+  //-         .row
+  //-           .col-md-8.col-md-offset-2.subtext.to-animate
+  //-             h3
+  //-               | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+  //-     .row
+  //-       .col-md-4
+  //-         .fh5co-person.text-center.to-animate
+  //-           figure
+  //-             img(src='images/person1.jpg', alt='Image')
+  //-           h3 Jean Smith
+  //-           span.fh5co-position Web Designer
+  //-           p
+  //-             | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+  //-           ul.social.social-circle
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-twitter
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-facebook
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-dribbble
+  //-       .col-md-4
+  //-         .fh5co-person.text-center.to-animate
+  //-           figure
+  //-             img(src='images/person2.jpg', alt='Image')
+  //-           h3 Rob Smith
+  //-           span.fh5co-position Web Developer
+  //-           p
+  //-             | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+  //-           ul.social.social-circle
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-twitter
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-facebook
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-github
+  //-       .col-md-4
+  //-         .fh5co-person.text-center.to-animate
+  //-           figure
+  //-             img(src='images/person3.jpg', alt='Image')
+  //-           h3 Larry Ben
+  //-           span.fh5co-position Web Designer
+  //-           p
+  //-             | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts
+  //-           ul.social.social-circle
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-twitter
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-facebook
+  //-             li
+  //-               a(href='#')
+  //-                 i.icon-dribbble
+  section#fh5co-counters(style='background-image: url(images/full_image_1.jpg);', data-stellar-background-ratio='0.5')
+    .fh5co-overlay
+    .container
+      .row
+        .col-md-12.section-heading.text-center.to-animate
+          h2 Fun Facts
+      .row
+        .col-md-3.col-sm-6.col-xs-12
+          .fh5co-counter.to-animate
+            i.fh5co-counter-icon.icon-briefcase.to-animate-2
+            span.fh5co-counter-number.js-counter(data-from='0', data-to='25', data-speed='5000', data-refresh-interval='50') 25
+            span.fh5co-counter-label Finished projects
+        .col-md-3.col-sm-6.col-xs-12
+          .fh5co-counter.to-animate
+            i.fh5co-counter-icon.icon-leaf.to-animate-2
+            span.fh5co-counter-number.js-counter(data-from='0', data-to='2688', data-speed='5000', data-refresh-interval='50') 2688
+            span.fh5co-counter-label Plants planted
+        .col-md-3.col-sm-6.col-xs-12
+          .fh5co-counter.to-animate
+            i.fh5co-counter-icon.icon-home.to-animate-2
+            span.fh5co-counter-number.js-counter(data-from='0', data-to='268', data-speed='5000', data-refresh-interval='50') 268
+            span.fh5co-counter-label Happy families
+        .col-md-3.col-sm-6.col-xs-12
+          .fh5co-counter.to-animate
+            i.fh5co-counter-icon.icon-emotsmile.to-animate-2
+            span.fh5co-counter-number.js-counter(data-from='0', data-to='1088', data-speed='5000', data-refresh-interval='50') 1088
+            span.fh5co-counter-label People helped
+  section#fh5co-contact(data-section='contact')
+    .container
+      .row
+        .col-md-12.section-heading.text-center
+          h2.to-animate Get In Touch
+          .row
+            .col-md-8.col-md-offset-2.subtext.to-animate
+              h3
+                | Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+      .row.row-bottom-padded-md
+        .col-md-6.to-animate
+          h3 Contact Info
+          ul.fh5co-contact-info
+            li.fh5co-contact-address
+              i.icon-home
+              | Grha XL
+            li
+              i.icon-phone
+              |  (123) 465-6789
+            li
+              i.icon-envelope
+              | info@nannypot.co
+            li
+              i.icon-globe
+              a(href='#', target='_blank') Nanny Pot
+        .col-md-6.to-animate
+          h3 Contact Form
+          .form-group
+            label.sr-only(for='name') Name
+            input#name.form-control(placeholder='Name', type='text')
+          .form-group
+            label.sr-only(for='email') Email
+            input#email.form-control(placeholder='Email', type='email')
+          .form-group
+            label.sr-only(for='phone') Phone
+            input#phone.form-control(placeholder='Phone', type='text')
+          .form-group
+            label.sr-only(for='message') Message
+            textarea#message.form-control(name='', cols='30', rows='5', placeholder='Message')
+          .form-group
+            input.btn.btn-primary.btn-lg(value='Send Message', type='submit')
+    #map.to-animate
+  footer#footer(role='contentinfo')
+    a.gotop.js-gotop(href='#')
+      i.icon-arrow-up2
+    .container
+      div
+        .col-md-12.text-center
+          p
+            | © #{title}. All Rights Reserved. 
+      .row
+        .col-md-12.text-center
+          ul.social.social-circle
+            li
+              a(href='#')
+                i.icon-twitter
+            li
+              a(href='#')
+                i.icon-facebook
+            li
+              a(href='#')
+                i.icon-youtube

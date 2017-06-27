@@ -2,6 +2,12 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    include includes/meta.pug
+    include includes/style.pug
+    
+    script(src='javascripts/modernizr-2.6.2.min.js')
   body
+    block components/header
     block content
+
+    include includes/scripts.pug
